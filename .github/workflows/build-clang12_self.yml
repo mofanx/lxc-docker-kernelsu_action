@@ -28,7 +28,7 @@ jobs:
     - name: 构建编译内核环境
       run: |
         sudo apt update
-        sudo apt -y install git make bc bison ccache openssl zip kmod cpio flex libelf-dev curl libssl-dev libtfm-dev wget device-tree-compiler ca-certificates python3 python2 binutils binutils-aarch64-linux-gnu binutils-arm-linux-gnueabi
+        sudo apt -y install git make bc bison ccache openssl zip kmod cpio flex libelf-dev curl libssl-dev libtfm-dev wget device-tree-compiler ca-certificates python3 python2 binutils binutils-aarch64-linux-gnu gcc-aarch64-linux-gnu binutils-arm-linux-gnueabi gcc-arm-linux-gnueabi
         mkdir -p $GITHUB_WORKSPACE/kernel_workspace
     
     - name: 下载谷歌clang12编译器
